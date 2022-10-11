@@ -24,6 +24,16 @@
 <script>
 export default {
   name: 'SaleRow',
+  props: {
+    article: String,
+    id: Number,
+    items: Array,
+    imagen: {
+      sourse: String,
+      descripcion: String,
+    },
+    styleObject: {},
+  },
   setup() {
     return {
       /* article: '',
@@ -35,17 +45,6 @@ export default {
       },
       styleObject: {}, */
     };
-  },
-
-  props: {
-    article: String,
-    id: Number,
-    items: Array,
-    imagen: {
-      sourse: String,
-      descripcion: String,
-    },
-    styleObject: {},
   },
   methods: {
     classObject1() {

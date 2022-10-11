@@ -11,9 +11,9 @@ export default {
   data() {
     return {
       title: 'Hello Coderhouse!',
-      presentation_name: 'Mi nombre es Virginia Nemec',
-      workDescription: `DESAFIO de VUE2 a VUE3 <br> DESAFIO GENERICO DE LA CLASE 7 HECHO EN VUE 2 <BR> ELABORA DOS COMPONENTES ANIDADOS <BR>
-Crea dos componentes anidados, que puedan comunicarse entre sí. 
+      presentation_name: 'DESAFIO de VUE2 a VUE3',
+      workDescription: `DESAFIO GENERICO DE LA CLASE 7 HECHO EN VUE 2: <BR> ELABORA DOS COMPONENTES ANIDADOS <BR>
+Crea dos componentes anidados, que puedan comunicarse entre sí. <br> lo pase a Vue 3
  `,
     };
   },
