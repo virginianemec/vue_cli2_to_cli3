@@ -1,26 +1,31 @@
 <template>
   <div class="coder--header">
-    <h1>{{ title }} - {{ presentation_name }}</h1>
+    <h1>{{ title }} - {{ presentationName }}</h1>
     <div class="descripcion" v-html="workDescription"></div>
   </div>
 </template>
 
 <script>
+import { ref } from 'vue';
+
 export default {
   name: 'SalesHeader',
-  data() {
+  setup() {
+    const title = ref('Hello Coderhouse!');
+    const presentationName = ref('Mi nombre es Virginia Nemec');
+    const workDescription = ref(`Tomá el DESAFIO GENERICO - CLASE 7: <BR> ELABORA DOS COMPONENTES ANIDADOS <BR>
+                          Crea dos componentes anidados, que puedan comunicarse entre sí. <br> 
+                          AHORA: pasalo a vue 3 y router 4`);
     return {
-      title: 'Hello Coderhouse!',
-      presentation_name: 'Mi nombre es Virginia Nemec',
-      workDescription: `DESAFIO GENERICO - CLASE 7 <BR> ELABORA DOS COMPONENTES ANIDADOS <BR>
-Crea dos componentes anidados, que puedan comunicarse entre sí.
- `,
+      title,
+      presentationName,
+      workDescription,
     };
   },
 };
 </script>
 
-<style >
+<style scope>
 .coder--header {
   background-color: #393b43;
 }

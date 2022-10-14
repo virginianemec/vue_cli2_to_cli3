@@ -44,7 +44,6 @@ export default {
     SaleRow,
   },
   setup() {
-    const datosModificados = 0;
     const carrito = ref([]);
     const salesArray = [
       {
@@ -105,13 +104,11 @@ export default {
     */
     return {
       salesArray,
-      datosModificados,
       carrito,
     };
   },
   methods: {
     sumar(objFilaItem) {
-      this.datosModificados += 1;
       this.agregarCarrito(objFilaItem.fila.item);
       console.log(`Se modifico la fila: ${objFilaItem.fila.item}`);
     },

@@ -1,20 +1,18 @@
 <template>
   <div id='app'>
     <SalesHeader></SalesHeader>
-    <SalesTable />
+    <router-view/>
     <SalesFooter></SalesFooter>
   </div>
 </template>
 
 <script>
-import SalesTable from './components/SalesTable.vue';
 import SalesFooter from './components/SalesFooter.vue';
 import SalesHeader from './components/SalesHeader.vue';
 
 export default {
   name: 'App',
   components: {
-    SalesTable,
     SalesHeader,
     SalesFooter,
   },
