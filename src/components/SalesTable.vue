@@ -40,9 +40,6 @@ import SaleRow from './SaleRow.vue';
 
 export default {
   name: 'SalesTable',
-  components: {
-    SaleRow,
-  },
   setup() {
     const carrito = ref([]);
     const salesArray = [
@@ -107,6 +104,9 @@ export default {
       carrito,
     };
   },
+  components: {
+    SaleRow,
+  },
   methods: {
     sumar(objFilaItem) {
       this.agregarCarrito(objFilaItem.fila.item);
@@ -119,7 +119,6 @@ export default {
       this.carrito.splice(indexOfObject, 1);
     },
   },
-  computed: {},
 };
 </script>
 
